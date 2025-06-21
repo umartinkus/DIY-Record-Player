@@ -1,0 +1,3 @@
+- This folder contains the code used to capture an audio signal using the oscilloscope on a Digilent Analog Discovery 2
+- To use it, connect the scope leads directly to the signal coming from your cartridge. Lower the tone arm onto the record and run Real-Time-Audio-Recording.py
+- The conversion from the .csv created by Real-Time-Audio-Processing.py to a 16-bit pcm .wav file is done in the local jupyter notebook
