@@ -52,13 +52,6 @@ if hdwf.value == hdwfNone.value:
 
 dwf.FDwfDeviceAutoConfigureSet(hdwf, c_int(0)) # 0 = the device will only be configured when FDwf###Configure is called
 
-# print("Generating sine wave...")
-# dwf.FDwfAnalogOutNodeEnableSet(hdwf, c_int(0), AnalogOutNodeCarrier, c_int(1))
-# dwf.FDwfAnalogOutNodeFunctionSet(hdwf, c_int(0), AnalogOutNodeCarrier, funcSine)
-# dwf.FDwfAnalogOutNodeFrequencySet(hdwf, c_int(0), AnalogOutNodeCarrier, c_double(1))
-# dwf.FDwfAnalogOutNodeAmplitudeSet(hdwf, c_int(0), AnalogOutNodeCarrier, c_double(2))
-# dwf.FDwfAnalogOutConfigure(hdwf, c_int(0), c_int(1))
-
 #set up acquisition
 dwf.FDwfAnalogInChannelEnableSet(hdwf, c_int(0), c_int(1))
 dwf.FDwfAnalogInChannelRangeSet(hdwf, c_int(0), c_double(5))
